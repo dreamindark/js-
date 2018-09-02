@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 5000px;
+}
+/*导航部分*/
+.top{
+    height: 89px;
+    width: 100%;
+    background-color: rgb(125,108,70);
+}
+.option{
+    z-index: 9999;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(54,84,60);
+}
+.option ul{
+    margin: 0 100px;
+}
+.option li{
+    float: left;
+    color: rgb(241,148,131);
+    list-style: none;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+/*身体部分*/
+.center{
+    cursor: pointer;
+    margin: 60px auto;
+    clear: both;
+    width: 800px;
+    height: 440px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+.center ul{
+    width: 5000px;
+    height: 410px;
+    left: 0;
+    top: 0;
+    position: absolute;
+
+}
+.center li{
+    overflow: hidden;
+    list-style: none;
+    width: 800px;
+    height: 410px;
+    float: left;
+}
+.foot ol{ position:absolute; right:20px; bottom:60px; line-height:20px; text-align:center;}
+.foot ol li{ float:left; width:20px; height:20px; background:#fff; border:1px solid #ccc; margin-left:10px; cursor:pointer;}
+.foot ol li.current{ background:yellow;}
+
+#arr {display: none;}
+#arr span{ width:40px; height:40px; position:absolute; left:5px; top:50%; margin-top:-20px; background:#000; cursor:pointer; line-height:40px; text-align:center; font-weight:bold; font-family:'黑体'; font-size:30px; color:#fff; opacity:0.3; border:1px solid #fff;}
+#arr #right{right:5px; left:auto;}
+/*指到*/
+.guide{
+    /*z-index: 999;*/
+    position: fixed;
+    top: 400px;
+    right: 0;
+    height: 150px;
+    width: 50px;
+    background-color: rgb(254,223,225);
+    display: none;
+}
+.guide ul{
+   margin: 30px 0;
+}
+.guide li{
+    list-style: none;
+    padding: 10px 8px;
+    margin: 10px 0;
+    cursor: pointer;
+}
